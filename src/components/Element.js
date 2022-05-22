@@ -5,7 +5,7 @@ export default function Element(props) {
 
     return (
         <div id={name}>
-            <h1>{name}</h1>
+            <h4>{name}</h4>
         </div>
     );
 }
