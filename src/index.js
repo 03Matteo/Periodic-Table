@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import PeriodicTable from './PeriodicTable';
+import Element from './components/Element';
+
+import data from './data/elements.json';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const elements = data.elements.map(element => element);
+console.log(elements)
+
 root.render(
   <React.StrictMode>
-    <App />
+    <PeriodicTable />
+    {elements.map(element => {
+      return (
+        <Element
+          key={element.name}
+          name={element.name}
+        />
+      )
+    })}
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
