@@ -1,0 +1,17 @@
+.elements {
+    display: grid;
+    grid-template-columns: repeat(18, 50px);
+    gap: 8px 10px;
+    position: relative;
+    top: 10px;
+    left: 25%;
+}
+
+.lan-att {
+    display: grid;
+    grid-template-columns: repeat(14, 50px);
+    gap: 8px 10px;
+    position: relative;
+    top: 35px;
+    left: 495px;
+}
