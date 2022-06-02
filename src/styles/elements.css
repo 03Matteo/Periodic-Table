@@ -1,19 +1,57 @@
 .element {
     border: 1px solid black;
-    height: 60px;
-    width: 54px;
+    border-radius: 7%;
+}
+
+.element:hover {
+    transform: translateY(-5%);
+    border: 1px solid blue;
+}
+
+#s {
+    background-color: darksalmon;
+}
+
+#d {
+    background-color: darkkhaki;
+}
+
+#p {
+    background-color: lightgreen;
+}
+
+#f {
+    background-color: aquamarine;
+}
+
+#n {
+    background-color: forestgreen;
+}
+
+.atomicNumber {
+    position: relative;
+    bottom: 44%;
+    left: 5%;
 }
 
 .symbol {
-    color: red;
+    font-size: 15px;
     position: relative;
-    left: 3px;
-    font-size: 13px;
+    bottom: 55px;
+    left: 4%;
 }
 
-.name{
-    font-size: 8px;
+.name {
+    font-size: 9px;
     position: relative;
+    bottom: 85px;
     left: 1px;
-    bottom: 5px;
+}
+
+#gas {
+    color: red;
+}
+
+#liquid {
+    color: blue;
 }
